@@ -1,0 +1,486 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;700&display=swap');
+
+
+/* VARIABLE */
+:root {
+    --pri-color: #0F8B8D;
+    --sec-color: #143642;
+    --aks-color: #EC9A29;
+    --btn-color: #A8201A;
+    --txt-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* MASTER */
+.container {
+    /* max-width: 1440px; */
+    width: 100%;
+    padding: 0px;
+    /* margin: 0 auto; */
+}
+
+h1, h2, h3, p, a {
+    font-family: "Lato";
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 145px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.navbar-sub {
+    /* position: fixed; */
+    width: 100%;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pri-color);
+}
+
+.navbar-logo {
+    width: 335px;
+    height: 67px;
+    /* padding-top: 39px;
+    padding-left: 138px; */
+    padding-right: 433px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+/* .........................HOME PAGE............................. */
+
+/* BANNER */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(rgba(20, 54, 66, 0.7), rgba(20, 54, 66, 0.7)), url(assets/img/Coffe\ Header.png);
+    background-size: cover;
+    border-radius: 10px;
+    height: 700px;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 70px;
+}
+
+.banner-text p {
+    font-size: 36px;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 40px;
+}
+
+button {
+    width: 335px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 24px;
+    background-color: var(--btn-color);
+    color: white;
+    border-style: none;
+}
+.cardTitle {
+    text-decoration: underline;
+    text-decoration-color: var(--aks-color) ;
+    text-underline-offset: 20px;
+    font-size: 48px;
+}   
+
+.cardTitle2 {
+    font-size: 24px;
+}
+
+.card-item img{
+    width: 25%;
+    border-radius: 20px;
+}
+
+.card-item img:hover {
+    transform: scale(1,1);
+    rotate: 10deg;
+}
+
+/* FEED */
+.feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.feed-title {
+    font-size: 48px;
+    color: var(--pri-color);
+}
+
+span {
+    color: var(--aks-color);
+}
+
+.feed-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feed-wrap img {
+    width: 15%;
+    margin: 50px 80px;
+    transition: all 0.8s;
+}
+
+.feed-wrap img:hover {
+    transform: scale(1,1);
+    rotate: 10deg;
+}
+
+/* CONTACT */
+.cont {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.cont p {
+    font-size: 24px;
+}
+
+.contact-title {
+    font-size: 48px;
+    color: var(--pri-color);
+}
+
+/* .........................MENU PAGE............................. */
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.menu-title {
+    font-size: 48px;
+    text-align: center;
+    color: var(--pri-color);
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.menu-subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-menuWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding-left: 276px;
+}
+
+.card-menu {
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+    margin-bottom: 30px;
+}
+
+.card-menu h3 {
+    position: absolute;
+    z-index: 4;
+    margin-top: 21px;
+    color: var(--txt-color);
+}
+
+.card-menu p {
+    position: absolute;
+    z-index: 4;
+    margin-top: 55px;
+    color: var(--txt-color);
+}
+
+.menu-img {
+    position: absolute;
+    width: 186px;
+    z-index: 3;
+    margin-top: 77px;
+}
+
+.menu-imgbg {
+    position: relative;
+    width: 216px;
+    border-radius: 20px;
+}
+
+/* .........................DETAIL PAGE............................. */
+.detail-menu {
+    display: flex;
+}
+
+.detail-menuItem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.detail-menuItem img {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.detail-menuItem h1 {
+    font-size: 48px;
+    margin-top: 148px;
+    color: var(--pri-color);
+}
+
+.detail-menuItem h2 {
+    font-size: 60px;
+    color: var(--pri-color);
+}
+
+.detail-menuItem p {
+    font-size: 24px;
+    margin-top: -10px;
+}
+
+.detail-desc {
+    margin-left: 257px;
+    margin-bottom: 100px;
+}
+
+.detail-desc h1 {
+    font-size: 48px;
+    color: var(--pri-color);
+    border-bottom: 5px solid var(--aks-color);
+    padding-bottom: 20px;
+}
+
+.detail-desc p {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -10px;
+}
+
+.detail-desc button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--btn-color);
+    border-radius: 50px;
+    border-color: var(--btn-color);
+    color: var(--txt-color);
+    padding: 1px 20px 0px 0px;
+}
+
+.detail-desc span {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: invert();
+    padding-top: 5px;
+}
+/* .........................FINDUS PAGE............................. */
+.find {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-bottom: 80px;
+}
+
+.find-title h1 {
+    color: var(--pri-color);
+    font-size: 48px;
+}
+
+.find-title p {
+    font-size: 24px;
+}
+
+.find-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.find-cardContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.find-card {
+    box-sizing: border-box;
+    border: 2px solid #D2D2D2;
+    border-radius: 20px;
+    width: 474px;
+    height: 196px;
+    padding: 20px 45px 1px 45px;
+    margin-bottom: 20px;
+    margin-right: 112px;
+}
+
+.find-map img {
+    border-radius: 20px;
+}
+
+/* .........................CONTACT PAGE............................. */
+
+.contact h1 {
+    color: var(--pri-color);
+    font-size: 48px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form {
+    height: 100%;
+    width: 50%;
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+    margin-bottom: 10%;
+}
+
+.form-group {
+    margin: 5%;
+    display: flex;
+}
+.form-group label {
+    font-family: "Lato";
+    font-size: 30px;
+    width: 50%;
+    margin: 3%;
+}
+
+.form-group input {
+    width: 100%;
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+    resize: none;
+    text-indent: 10px;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #D2D2D2;
+    border-radius: 20px;
+}
+
+form button {
+    margin-bottom: 10%;
+    margin-left: 30%
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: left;
+    height: 460px;
+    border-radius: 10px;
+    background-color: var(--sec-color);
+}
+
+.footer-logo {
+    margin-left: 139px;
+}
+
+.footer-logo img {
+    display: flex;
+    margin-top: 80px;
+    margin-right: 139px;
+    margin-bottom: 31px;
+}
+
+.footer-logo a {
+    margin-right: 27px;
+    color: var(--txt-color);
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-right: 139px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-right: 139px;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-right: 139px;
+}
+
+.footer-itemHead {
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--aks-color);
+}
+
+.footer-item {
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--txt-color);
+}
+
